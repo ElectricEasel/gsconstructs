@@ -1,0 +1,58 @@
+
+---Downloaded files---
+The import files for: Electrician Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://gsconstructs.eebeta.com
+Data file = /home/eebetaco/public_html/gsconstructs/wp-content/themes/terri/demo-files/electrician-content.xml
+Widget file = /home/eebetaco/public_html/gsconstructs/wp-content/themes/terri/demo-files/electrician-widgets.json
+Customizer file = /home/eebetaco/public_html/gsconstructs/wp-content/themes/terri/demo-files/electrician-customizer.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Default Sidebar : 
+
+Search - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Custom Menu - Services - Widget already exists
+Recent Posts - Recent Posts - Widget already exists
+Devclick Social Icons - No Title - Widget already exists
+
+Blog Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - Recent Posts - Widget already exists
+Categories - Categories - Widget already exists
+Devclick Social Icons - No Title - Widget already exists
+
+header-widgets : Sidebar does not exist in theme (moving widget to Inactive)
+
+Devclick Icon Text - No Title - Imported to Inactive
+Devclick Icon Text - No Title - Imported to Inactive
+Devclick Icon Text - No Title - Imported to Inactive
+
+navigation-widgets : Sidebar does not exist in theme (moving widget to Inactive)
+
+Devclick Social Icons - No Title - Imported to Inactive
+
+Footer 1 : 
+
+Visual Editor - About Us - Imported
+
+Footer 2 : 
+
+Custom Menu - Our Services - Widget already exists
+
+Footer 3 : 
+
+Categories - Categories - Widget already exists
+
+Footer 4 : 
+
+Visual Editor - Get in Touch - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!

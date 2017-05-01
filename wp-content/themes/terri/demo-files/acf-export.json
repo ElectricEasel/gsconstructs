@@ -1,0 +1,1788 @@
+[
+    {
+        "key": "group_577117460fcd8",
+        "title": "Front Page Banner \/ Slider",
+        "fields": [
+            {
+                "key": "field_57c690f4f898e",
+                "label": "Banner or Slider",
+                "name": "front_page_banner_slider",
+                "type": "radio",
+                "instructions": "Choose between displaying a single banner or a slider on the front page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "banner": "Banner",
+                    "slider": "Slider"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "slider",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57c6931f04c36",
+                "label": "Banner Settings",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c690f4f898e",
+                            "operator": "==",
+                            "value": "banner"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_57c6933104c37",
+                "label": "Show Banner Overlay",
+                "name": "banner_overlay",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_57c6935804c38",
+                "label": "Banner Overlay Colour",
+                "name": "banner_overlay_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6933104c37",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#092d3b"
+            },
+            {
+                "key": "field_57c6938689e4f",
+                "label": "Banner Overlay Opacity",
+                "name": "banner_overlay_opacity",
+                "type": "select",
+                "instructions": "Select the opacity of the slider overlay.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6933104c37",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0.10": "10%",
+                    "0.20": "20%",
+                    "0.30": "30%",
+                    "0.40": "40%",
+                    "0.50": "50%",
+                    "0.60": "60%",
+                    "0.70": "70%",
+                    "0.80": "80%",
+                    "0.90": "90%"
+                },
+                "default_value": [
+                    "0.80"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_57c693d5d5967",
+                "label": "Banner",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c690f4f898e",
+                            "operator": "==",
+                            "value": "banner"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_57c694b406f1a",
+                "label": "Banner Image",
+                "name": "banner_background_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_57c694e506f1b",
+                "label": "Banner Sub Title",
+                "name": "banner_sub_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_57c694fa06f1c",
+                "label": "Banner Title",
+                "name": "banner_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_57c6950f06f1d",
+                "label": "Banner Buttons",
+                "name": "banner_show_buttons",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No Button": "No Button",
+                    "One Button": "One Button",
+                    "Two Buttons": "Two Buttons"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "No Button",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57c6955806f1e",
+                "label": "Button One Link Type",
+                "name": "banner_link_one_link_type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "!=",
+                            "value": "No Button"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Internal Link": "Internal Link",
+                    "External Link": "External Link"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "Internal Link",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57c695a506f1f",
+                "label": "Button One Link",
+                "name": "banner_link_one_internal_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6955806f1e",
+                            "operator": "==",
+                            "value": "Internal Link"
+                        },
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "!=",
+                            "value": "No Button"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+
+                ],
+                "taxonomy": [
+
+                ],
+                "allow_null": 1,
+                "allow_archives": 1,
+                "multiple": 0
+            },
+            {
+                "key": "field_57c6961a06f21",
+                "label": "Button One Link",
+                "name": "banner_link_one_external_link",
+                "type": "url",
+                "instructions": "Use http:\/\/",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6955806f1e",
+                            "operator": "==",
+                            "value": "External Link"
+                        },
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "!=",
+                            "value": "No Button"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/"
+            },
+            {
+                "key": "field_57c6967b06f23",
+                "label": "Button One Text",
+                "name": "banner_link_one_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "!=",
+                            "value": "No Button"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_57c696b806f24",
+                "label": "Button One Style",
+                "name": "banner_link_one_style",
+                "type": "radio",
+                "instructions": "Choose a between a button with a background colour or a border.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "!=",
+                            "value": "No Button"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Colour": "Colour",
+                    "Border": "Border"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "Colour",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57c6970f06f25",
+                "label": "Button Two Link Type",
+                "name": "banner_link_two_link_type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "==",
+                            "value": "Two Buttons"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Internal Link": "Internal Link",
+                    "External Link": "External Link"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "Internal Link",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57c6975406f26",
+                "label": "Button Two Link",
+                "name": "banner_link_two_internal_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6970f06f25",
+                            "operator": "==",
+                            "value": "Internal Link"
+                        },
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "==",
+                            "value": "Two Buttons"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+
+                ],
+                "taxonomy": [
+
+                ],
+                "allow_null": 1,
+                "allow_archives": 1,
+                "multiple": 0
+            },
+            {
+                "key": "field_57c697a806f27",
+                "label": "Button Two Link",
+                "name": "banner_link_two_external_link",
+                "type": "url",
+                "instructions": "Use http:\/\/",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6970f06f25",
+                            "operator": "==",
+                            "value": "External Link"
+                        },
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "==",
+                            "value": "Two Buttons"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/"
+            },
+            {
+                "key": "field_57c697e106f28",
+                "label": "Button Two Text",
+                "name": "banner_link_two_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "==",
+                            "value": "Two Buttons"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_57c6983606f29",
+                "label": "Button Two Style",
+                "name": "banner_link_two_style",
+                "type": "radio",
+                "instructions": "Choose a between a button with a background colour or a border.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6950f06f1d",
+                            "operator": "==",
+                            "value": "Two Buttons"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Colour": "Colour",
+                    "Border": "Border"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "Colour",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57c6a4c72c3eb",
+                "label": "Show Request a Callback Form",
+                "name": "banner_show_form",
+                "type": "true_false",
+                "instructions": "Display a pre-defined request a callback form.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_57c6a4fc2c3ec",
+                "label": "Request a Callback Form",
+                "name": "banner_callback_form",
+                "type": "wysiwyg",
+                "instructions": "Paste shortcode for the chosen request a callback form here.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c6a4c72c3eb",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "text",
+                "toolbar": "full",
+                "media_upload": 0
+            },
+            {
+                "key": "field_577117aa627bc",
+                "label": "Slider Settings",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c690f4f898e",
+                            "operator": "==",
+                            "value": "slider"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_577118a5fe91a",
+                "label": "RTL Slider",
+                "name": "rtl_slider",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Check this to enable RTL for this slider.",
+                "default_value": 0
+            },
+            {
+                "key": "field_57724c7d16952",
+                "label": "Show Slider Overlay",
+                "name": "slider_overlay",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_57724c9816953",
+                "label": "Slider Overlay Colour",
+                "name": "slider_overlay_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57724c7d16952",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#092d3b"
+            },
+            {
+                "key": "field_57724cbc16954",
+                "label": "Slider Overlay Opacity",
+                "name": "slider_overlay_opacity",
+                "type": "select",
+                "instructions": "Select the opacity of the slider overlay.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57724c7d16952",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0.10": "10%",
+                    "0.20": "20%",
+                    "0.30": "30%",
+                    "0.40": "40%",
+                    "0.50": "50%",
+                    "0.60": "60%",
+                    "0.70": "70%",
+                    "0.80": "80%",
+                    "0.90": "90%"
+                },
+                "default_value": [
+                    "0.80"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_577117cf1725d",
+                "label": "Slides",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57c690f4f898e",
+                            "operator": "==",
+                            "value": "slider"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_577119426a46f",
+                "label": "Slide",
+                "name": "slider_slide",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": "",
+                "max": "",
+                "layout": "block",
+                "button_label": "Add Slide",
+                "sub_fields": [
+                    {
+                        "key": "field_577119a86a470",
+                        "label": "Image",
+                        "name": "slider_background_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_57711b9bb0b5c",
+                        "label": "Sub Title",
+                        "name": "slider_sub_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_57711b87b0b5b",
+                        "label": "Title",
+                        "name": "slider_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_577120fde1124",
+                        "label": "Slider Buttons",
+                        "name": "slider_show_buttons",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "No Button": "No Button",
+                            "One Button": "One Button",
+                            "Two Buttons": "Two Buttons"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "No Button",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57711bacb0b5d",
+                        "label": "Button One Link Type",
+                        "name": "slider_link_one_link_type",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "!=",
+                                    "value": "No Button"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Internal Link": "Internal Link",
+                            "External Link": "External Link"
+                        },
+                        "allow_null": 1,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "Internal Link",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57711cd9b0b5e",
+                        "label": "Button One Link",
+                        "name": "slider_link_one_internal_link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_57711bacb0b5d",
+                                    "operator": "==",
+                                    "value": "Internal Link"
+                                },
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "!=",
+                                    "value": "No Button"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+
+                        ],
+                        "taxonomy": [
+
+                        ],
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "allow_archives": 1
+                    },
+                    {
+                        "key": "field_57711d1bb0b5f",
+                        "label": "Button One Link",
+                        "name": "slider_link_one_external_link",
+                        "type": "url",
+                        "instructions": "Use http:\/\/",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_57711bacb0b5d",
+                                    "operator": "==",
+                                    "value": "External Link"
+                                },
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "!=",
+                                    "value": "No Button"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "http:\/\/"
+                    },
+                    {
+                        "key": "field_57711d70b0b60",
+                        "label": "Button One Text",
+                        "name": "slider_link_one_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "!=",
+                                    "value": "No Button"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_57711d8cb0b61",
+                        "label": "Button One Style",
+                        "name": "slider_link_one_style",
+                        "type": "radio",
+                        "instructions": "Choose a between a button with a background colour or a border.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "!=",
+                                    "value": "No Button"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Colour": "Colour",
+                            "Border": "Border"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "Colour",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57711db7b0b62",
+                        "label": "Button Two Link Type",
+                        "name": "slider_link_two_link_type",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "==",
+                                    "value": "Two Buttons"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Internal Link": "Internal Link",
+                            "External Link": "External Link"
+                        },
+                        "allow_null": 1,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "Internal Link",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57711ddfb0b63",
+                        "label": "Button Two Link",
+                        "name": "slider_link_two_internal_link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_57711db7b0b62",
+                                    "operator": "==",
+                                    "value": "Internal Link"
+                                },
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "==",
+                                    "value": "Two Buttons"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+
+                        ],
+                        "taxonomy": [
+
+                        ],
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "allow_archives": 1
+                    },
+                    {
+                        "key": "field_57711df3b0b64",
+                        "label": "Button Two Link",
+                        "name": "slider_link_two_external_link",
+                        "type": "url",
+                        "instructions": "Use http:\/\/",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_57711db7b0b62",
+                                    "operator": "==",
+                                    "value": "External Link"
+                                },
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "==",
+                                    "value": "Two Buttons"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "http:\/\/"
+                    },
+                    {
+                        "key": "field_57711e07b0b65",
+                        "label": "Button Two Text",
+                        "name": "slider_link_two_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "==",
+                                    "value": "Two Buttons"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_57711e18b0b66",
+                        "label": "Button Two Style",
+                        "name": "slider_link_two_style",
+                        "type": "radio",
+                        "instructions": "Choose a between a button with a background colour or a border.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_577120fde1124",
+                                    "operator": "==",
+                                    "value": "Two Buttons"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Colour": "Colour",
+                            "Border": "Border"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "Colour",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57c283b50c166",
+                        "label": "Show Request a Callback Form",
+                        "name": "slider_show_form",
+                        "type": "true_false",
+                        "instructions": "Display a pre-defined request a callback form.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0
+                    },
+                    {
+                        "key": "field_57c283f70c167",
+                        "label": "Request a Callback Form",
+                        "name": "slider_callback_form",
+                        "type": "wysiwyg",
+                        "instructions": "Paste shortcode for the chosen request a callback form here.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_57c283b50c166",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "text",
+                        "toolbar": "full",
+                        "media_upload": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "posts_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_57dfe68930184",
+        "title": "Project Gallery",
+        "fields": [
+            {
+                "key": "field_57dfffb98e3e3",
+                "label": "Gallery Columns",
+                "name": "project_gallery_columns",
+                "type": "radio",
+                "instructions": "Select the number of images in each row",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": 3,
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57dfe69bd731b",
+                "label": "Gallery Images",
+                "name": "project_gallery_images",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "insert": "append",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_57e25179b3033",
+                "label": "Show Gallery Content",
+                "name": "show_project_gallery_content",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_57e25137b3032",
+                "label": "Gallery Content",
+                "name": "project_gallery_content",
+                "type": "wysiwyg",
+                "instructions": "Add extra content to be shown below the gallery images.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57e25179b3033",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "project"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_579f001f17c51",
+        "title": "Page Title",
+        "fields": [
+            {
+                "key": "field_579f0235d5714",
+                "label": "Titles",
+                "name": "titles",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_579f00bcc816a",
+                "label": "Subtitle",
+                "name": "page_subtitle",
+                "type": "text",
+                "instructions": "Set a custom sub title for a page, post, project, service or team member.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_579f009ec8169",
+                "label": "Title",
+                "name": "page_title",
+                "type": "text",
+                "instructions": "Set a custom title for a page, post, project, service or team member. This overwrites the standard title.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_579f029de4e1b",
+                "label": "Settings",
+                "name": "_copy",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_579f017d71295",
+                "label": "Subtitle Colour",
+                "name": "page_subtitle_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#FAB709"
+            },
+            {
+                "key": "field_579f016471294",
+                "label": "Title Colour",
+                "name": "page_title_colour",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#092d3b"
+            },
+            {
+                "key": "field_579f102b22f42",
+                "label": "Title Text Align",
+                "name": "page_title_text_align",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Left": "Left",
+                    "Centre": "Centre",
+                    "Right": "Right"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "Left",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57ab27a9159b2",
+                "label": "Page Title Size",
+                "name": "page_title_size",
+                "type": "radio",
+                "instructions": "Choose between small and large height for the page title.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "small": "Small",
+                    "large": "Large"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "small",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_579f119c7b3d5",
+                "label": "Page Title Background Settings",
+                "name": "page_title_background_settings",
+                "type": "radio",
+                "instructions": "Choose whether the page title background will display an image or a background colour.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Background Image": "Background Image",
+                    "Background Colour": "Background Colour"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "Background Colour",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_579f03e6d09d9",
+                "label": "Background Image",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f119c7b3d5",
+                            "operator": "==",
+                            "value": "Background Image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_579f04295e6fe",
+                "label": "Background Image",
+                "name": "page_title_background_image",
+                "type": "image",
+                "instructions": "Choose a background image to be used in the background of the page title area.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_579f05621e958",
+                "label": "Background Image Type",
+                "name": "page_title_background_image_type",
+                "type": "radio",
+                "instructions": "Choose whether the page title background image will be a repeating pattern or a large image that covers the area.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "pattern": "Repeating Pattern",
+                    "large_image": "Large Image"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "large_image",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_579f13618bfb7",
+                "label": "Background Image Overlay",
+                "name": "page_title_background_image_overlay",
+                "type": "true_false",
+                "instructions": "Select yes if you choose to display the theme defined overlay colour over the page title background image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_579f11f97b3d6",
+                "label": "Background Colour",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f119c7b3d5",
+                            "operator": "==",
+                            "value": "Background Colour"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "left",
+                "endpoint": 0
+            },
+            {
+                "key": "field_579f012d71293",
+                "label": "Background Colour",
+                "name": "page_title_background_colour",
+                "type": "color_picker",
+                "instructions": "Select a background colour for the page title area.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "posts_page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "front_page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "posts_page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "front_page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "project"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "team"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_57bde2d1c50cb",
+        "title": "Sidebar Settings",
+        "fields": [
+            {
+                "key": "field_57bde2e31054c",
+                "label": "Show or Hide Sidebar",
+                "name": "show_hide_sidebar",
+                "type": "radio",
+                "instructions": "Choose to hide sidebar or display left or right sidebar for this page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "hide": "Hide",
+                    "left": "Left",
+                    "right": "Right"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "right",
+                "layout": "horizontal",
+                "return_format": "value"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "front_page"
+                },
+                {
+                    "param": "page_template",
+                    "operator": "!=",
+                    "value": "template-full-width.php"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "!=",
+                    "value": "project"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

@@ -1,0 +1,63 @@
+
+---Downloaded files---
+The import files for: Main Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://gsconstructs.eebeta.com
+Data file = /home/eebetaco/public_html/gsconstructs/wp-content/themes/terri/demo-files/main-content.xml
+Widget file = /home/eebetaco/public_html/gsconstructs/wp-content/themes/terri/demo-files/main-widgets.json
+Customizer file = /home/eebetaco/public_html/gsconstructs/wp-content/themes/terri/demo-files/main-customizer.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+orphaned_widgets_1 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Search - No Title - Imported to Inactive
+Recent Posts - No Title - Imported to Inactive
+Recent Comments - No Title - Imported to Inactive
+Archives - No Title - Imported to Inactive
+Categories - No Title - Imported to Inactive
+Meta - No Title - Imported to Inactive
+
+Default Sidebar : 
+
+Search - No Title - Widget already exists
+Custom Menu - Services - Imported
+Recent Posts - Recent Posts - Imported
+Devclick Social Icons - No Title - Imported
+
+Blog Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - Recent Posts - Imported
+Categories - Categories - Imported
+Devclick Social Icons - No Title - Imported
+
+Topbar Widget Area : 
+
+Devclick Icon Text - No Title - Imported
+Devclick Icon Text - No Title - Imported
+Devclick Icon Text - No Title - Imported
+Devclick Social Icons - No Title - Imported
+
+Footer 1 : 
+
+Visual Editor - About Us - Imported
+
+Footer 2 : 
+
+Custom Menu - Our Services - Imported
+
+Footer 3 : 
+
+Categories - Categories - Imported
+
+Footer 4 : 
+
+Visual Editor - Get in Touch - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
